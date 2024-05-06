@@ -4,7 +4,7 @@ A python style implementation of Typechat
 
 # Useage
 ```
-pip3 install typingchat
+pip3 install pytypingchat
 ```
 
 local install

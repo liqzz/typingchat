@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "typingchat"
+name = "pytypingchat"
 dynamic = ["version"]
 requires-python = ">= 3.10"
 readme = "README.md"
@@ -34,6 +34,6 @@ Repository = "https://github.com/liqzz/typingchat"
 [tool.hatch.version]
 path = "src/typingchat/__about__.py"
 
-[tool.coverage.paths]
-typechat = ["src/typingchat"]
-tests = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/typingchat"]
