@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "typingchat"
+dynamic = ["version"]
+requires-python = ">= 3.10"
+readme = "README.md"
+description = "A python style implementation of Typechat."
+license = "MIT"
+
+authors = [
+  { name = "liqzz" },
+]
+
+dependencies = [
+  "pydantic>=2.7.1",
+  "openai>=1.25.2"
+]
+
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+Repository = "https://github.com/liqzz/typingchat"
+
+[tool.hatch.version]
+path = "src/typingchat/__about__.py"
+
+[tool.coverage.paths]
+typechat = ["src/typingchat"]
+tests = ["tests"]
