@@ -7,6 +7,11 @@ A python style implementation of Typechat
 pip3 install typingchat
 ```
 
+local install
+```
+pip3 install .
+```
+
 ## demo
 Custom dataclass 
 ```
@@ -46,14 +51,11 @@ coffee: CoffeeDrink = typechat.translate( #type: ignore
 coffee.model_dump() # {'type': 'CoffeeDrink', 'name': 'mocha', 'count': 1})
 
 ```
-
 output
 ```
 {'type': 'CoffeeDrink', 'name': 'mocha', 'count': 1})
 ```
-
 use as function call
-
 ```
 chat = OpenAIChat(api_key=OPENAI_API_KEY, model=OPENAI_MODEL)
 typechat = TypeChat(chat=chat)
